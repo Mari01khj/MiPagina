@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff4ff;
+  color: #333;
+}
+
+.contenedor-creditos {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  gap: 60px; /* Aumenta el espacio entre las dos columnas */
+  flex-wrap: wrap;
+}
+
+.columna {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Columna de Collage */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-auto-rows: 150px; /* altura fija para las filas */
+  gap: 15px; 
+  max-width: 600px;
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rellena sin deformar */
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease, filter 0.4s ease
+}
+
+.collage img:hover {
+  transform: scale(1.05) rotate(-2deg);
+  filter: brightness(1.1);
+}
+
+/* Columna de Texto */
+.columnatexto {
+  background: rgba(95, 60, 221, 0.6); 
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  max-width: 600px; /* para no crecer demasiado */
+  box-sizing: border-box;
+}
+
+.columnatexto h2 {
+  color: #d7d0e6;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.columnatexto p,
+.columnatexto ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.columnatexto ul {
+  list-style: disc inside;
+  padding-left: 0;
+}

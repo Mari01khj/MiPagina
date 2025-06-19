@@ -1,0 +1,114 @@
+body {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+background-color: #41325e;
+}
+
+/* Navbar con logo */
+.navbar-logo {
+background-color: #c0b9ed;
+padding: 10px 20px;
+display: flex; /* Habilita Flexbox en el contenedor principal */
+justify-content: space-between; /* Empuja el logo a la izquierda y la lista a la derecha */
+align-items: center; /* Centra verticalmente el logo y la lista */
+box-shadow: 0 2px 5px rgba(231, 113, 239, 0.2);
+}
+
+.logo-container .logo {
+color: #b18ce1; /* Color del logo */
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+}
+.logo-img {
+  height: 80px;
+  width: auto;
+}
+
+.nav-list-logo {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex; /* Habilita Flexbox para la lista de enlaces */
+gap: 25px; /* Espacio entre los elementos de la lista */
+}
+
+.nav-list-logo li a {
+text-decoration: none;
+color: rgb(68, 11, 176);
+padding: 8px 12px;
+display: block;
+transition: background-color 0.3s ease, color 0.3s ease;
+border-radius: 4px;
+}
+
+.nav-list-logo li a:hover {
+background-color: #2f1879;
+color: #f5efef;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: 300px;
+    gap: 5px;
+
+}
+.item {
+    border: 2px solid rgb(244, 244, 246);
+    border-radius: 10px;
+    box-shadow: 16px 8px 14px 7px rgba(53, 44, 72, 0.43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 80%;
+    height:80% ;
+}
+.item .card1 {
+     filter: blur(12px)
+}
+.item .card2 {
+     filter: brightness(0.50)
+}
+.item .card3 {
+     filter: contrast(0.20)
+}
+.item .card4 {
+     filter: hue-rotate(180deg)
+}
+.item .card5 {
+     filter: invert(0.40)
+}
+.item .card6 {
+     filter: contrast(200%)
+}
+
+
+.card1:hover{
+    transform: scale(1.2);
+    transition: transform(0.5) ease-in;
+}
+.card2:hover{
+    transform:rotate(10deg);
+    transition: transform(0.9) ease;
+}
+.card3:hover{
+    transform:rotateX(45deg);
+    transition: transform(0.5) linear;
+}
+.card4:hover{
+    transform: scale(1.2);
+    transition: transform(0.5) ease-in-out;
+}
+.card5:hover{
+    transform: scale(1.2);
+    transition: tranform(0.2) ease;
+}
+.card6:hover{
+    transform:scaleY(0.2);
+    transition: transform(0.5) ease-out;
+}
+.card7:hover{
+    transform: scale(1.2);
+    transition: transform(0.5) linear;
+}
